@@ -29,3 +29,9 @@ func NewGraphQLServer (accountUrl, catalogUrl, orderUrl string) (*Server, error)
 		orderClient,
 	}, nil
 }
+
+func (s *Server) Mutation() MutationResolver {
+	return &mutationResolver{
+		server: s,
+	}
+}
