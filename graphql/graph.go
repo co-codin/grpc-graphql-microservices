@@ -35,3 +35,9 @@ func (s *Server) Mutation() MutationResolver {
 		server: s,
 	}
 }
+
+func (s *Server) Query() QueryResolver {
+	return &queryResolver{
+		server: s,
+	}
+}
