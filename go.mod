@@ -7,6 +7,7 @@ toolchain go1.22.8
 require (
 	github.com/99designs/gqlgen v0.17.55
 	github.com/kelseyhightower/envconfig v1.4.0
+	github.com/segmentio/ksuid v1.0.4
 	github.com/vektah/gqlparser/v2 v2.5.18
 )
 
