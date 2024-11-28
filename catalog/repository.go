@@ -23,3 +23,13 @@ type Repository interface {
 type elasticRepository struct {
     client *elastic.Client
 }
+
+type productDocument struct {
+	Name        string  `json:"name"`
+	Description string  `json:"description"`
+	Price       float64 `json:"price"`
+}
+
+func NewElasticRepositry(url string) (Repository, error) {
+
+}
